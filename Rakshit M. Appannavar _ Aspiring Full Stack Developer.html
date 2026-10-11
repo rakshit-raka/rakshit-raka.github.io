@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rakshit M. Appannavar | Aspiring Full Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#F3F6FB;--panel:#FFFFFF;--ink:#13203F;--muted:#52607C;--line:#DAE1EC;--blue:#2448E8;
+  --good:#0E9F6E;--warn:#D98A04;--bad:#D6336C;--hero:#0D1836;--heroline:#1C2B55;--herotext:#EAF0FF;--shadow:0 10px 30px rgba(19,32,63,.08);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0A1226;--panel:#131E3A;--ink:#EAF0FA;--muted:#A3B1CB;--line:#25365A;--blue:#8AA2FF;
+  --good:#34D399;--warn:#F5B84B;--bad:#FF7AA8;--hero:#070E20;--heroline:#16234A;--shadow:0 10px 30px rgba(0,0,0,.35)}}
+:root[data-theme="dark"]{
+  --bg:#0A1226;--panel:#131E3A;--ink:#EAF0FA;--muted:#A3B1CB;--line:#25365A;--blue:#8AA2FF;
+  --good:#34D399;--warn:#F5B84B;--bad:#FF7AA8;--hero:#070E20;--heroline:#16234A;--shadow:0 10px 30px rgba(0,0,0,.35)}
+html{scroll-padding-top:70px;scroll-behavior:smooth;height:auto}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",sans-serif;line-height:1.08;margin:0}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--hero);border-bottom:1px solid var(--heroline)}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:12px;padding-bottom:12px}
+.nav b{font:700 18px "Bricolage Grotesque",sans-serif;color:var(--herotext)}
+.nav nav{display:flex;gap:6px;flex-wrap:wrap}
+.nav nav a{color:#B7C4E6;text-decoration:none;font-size:15px;padding:6px 14px;border-radius:999px}
+.nav nav a:hover{background:var(--heroline);color:#fff}
+
+/* hero */
+.hero{background:var(--hero);color:var(--herotext);
+  background-image:linear-gradient(var(--heroline) 1px,transparent 1px),linear-gradient(90deg,var(--heroline) 1px,transparent 1px);
+  background-size:44px 44px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center;padding-top:72px;padding-bottom:80px}
+.hello{display:inline-block;background:var(--heroline);border:1px solid #2F4380;border-radius:999px;padding:6px 16px;font-size:15px;color:#C9D6F7;margin-bottom:22px}
+.hello i{display:inline-block;width:9px;height:9px;border-radius:50%;background:#34D399;margin-right:8px}
+.hero h1{font-size:clamp(44px,7vw,84px);font-weight:800;letter-spacing:-.035em}
+.hero h1 span{color:#8AA2FF}
+.hero p.lead{font-size:19px;color:#B7C4E6;max-width:32em;margin:22px 0 30px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 26px;border-radius:10px;font-weight:500;text-decoration:none;border:2px solid #8AA2FF;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.main{background:#8AA2FF;color:#0D1836}
+.btn.alt{color:#C9D6F7}
+
+/* viewfinder */
+.vf{position:relative;background:#0A1230;border:1px solid #2F4380;border-radius:16px;padding:12px;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.vf svg{width:100%;height:auto;display:block;border-radius:8px}
+.rec{position:absolute;top:24px;right:26px;display:flex;align-items:center;gap:6px;font-size:13px;color:#fff;font-weight:500}
+.rec i{width:10px;height:10px;border-radius:50%;background:#FF4D6D}
+.scan{animation:scan 3.6s ease-in-out 1.8s 2}
+@keyframes scan{0%{transform:translateY(0)}50%{transform:translateY(190px)}100%{transform:translateY(0)}}
+.box{opacity:0;animation:pop .5s ease forwards}
+.b2{animation-delay:.5s}.b3{animation-delay:1s}.b4{animation-delay:1.5s}
+@keyframes pop{to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.box{animation:none;opacity:1}.scan{animation:none}html{scroll-behavior:auto}.btn{transition:none}}
+.vf figcaption{color:#9FB0DA;font-size:14px;padding:10px 6px 2px}
+
+/* facts */
+.facts{margin-top:-36px;position:relative}
+.facts .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.fact{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+.fact b{display:block;font:800 30px "Bricolage Grotesque",sans-serif;color:var(--blue)}
+.fact span{color:var(--muted);font-size:15px}
+
+/* sections */
+section{padding:64px 0 8px}
+section h2{font-size:clamp(30px,4.5vw,44px);letter-spacing:-.025em;margin-bottom:10px}
+section h2::after{content:"";display:block;width:56px;height:5px;border-radius:3px;background:var(--blue);margin-top:14px}
+.sub{color:var(--muted);margin:14px 0 28px;max-width:40em}
+.about{max-width:44em;font-size:18px;margin-top:22px}
+
+/* projects */
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.proj{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:0 0 24px;box-shadow:var(--shadow);overflow:hidden;transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
+.proj:hover{transform:translateY(-5px)}
+.proj .top{height:8px}
+.proj .body{padding:22px 24px 0}
+.proj h3{font-size:23px;margin:12px 0 10px}
+.proj p{margin:0;color:var(--muted)}
+.pill{display:inline-block;font-size:13px;font-weight:500;padding:3px 12px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.proj.p1 .top{background:var(--good)}.proj.p2 .top{background:var(--warn)}.proj.p3 .top{background:var(--bad)}
+.proj.big{grid-column:1/-1;flex-direction:row}
+.proj.big .top{width:10px;height:auto}
+.proj.big .body{padding-bottom:0;flex:1}
+.proj ul{margin:14px 0 0;padding-left:20px;color:var(--muted)}
+
+/* experience */
+.exp{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:26px 28px;box-shadow:var(--shadow);display:grid;grid-template-columns:200px 1fr;gap:24px;margin-top:26px}
+.exp h3{font-size:24px}
+.exp .meta{color:var(--muted);font-size:15px;margin-top:6px}
+.exp ul{margin:0;padding-left:20px}
+
+/* skills */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:26px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:24px 26px;box-shadow:var(--shadow)}
+.card h3{font-size:21px;margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.chips li{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:7px 16px;font-weight:500}
+.card ul.plain{margin:0;padding-left:20px}
+.learn{margin:16px 0 0;color:var(--muted)}
+
+/* contact */
+.contact .box2{background:var(--hero);color:var(--herotext);border-radius:20px;padding:44px 36px;margin-top:26px}
+.contact .box2 p{color:#B7C4E6;margin:0 0 16px;max-width:36em}
+.contact a.big{font:700 clamp(22px,4.2vw,38px) "Bricolage Grotesque",sans-serif;color:#8AA2FF;word-break:break-all}
+.contact a.tel{color:#C9D6F7}
+footer{padding:36px 0 48px;color:var(--muted);font-size:14px}
+
+@media (max-width:860px){
+  .hero .wrap{grid-template-columns:1fr;padding-top:44px;padding-bottom:70px}
+  .facts .wrap{grid-template-columns:1fr 1fr}
+  .projects,.grid2,.exp{grid-template-columns:1fr}
+  .proj.big{flex-direction:column}.proj.big .top{width:auto;height:8px}
+  .nav nav a{padding:6px 10px}
+}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <b>Rakshit M. Appannavar</b>
+  <nav aria-label="Sections"><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<div class="hero"><div class="wrap">
+  <div>
+    <div class="hello"><i></i>Open to internships</div>
+    <h1>Hi, I'm <span>Rakshit.</span> I build smart software.</h1>
+    <p class="lead">Third-year Computer Science student at RVITM, Bengaluru, heading towards a full stack developer role. My projects use Python and AI to detect faces, catch scams and read viewing trends.</p>
+    <div class="btns"><a class="btn main" href="#projects">See my projects</a><a class="btn alt" href="#contact">Contact me</a></div>
+  </div>
+  <figure class="vf" style="margin:0">
+    <div class="rec"><i></i>LIVE</div>
+    <svg viewBox="0 0 360 240" role="img" aria-label="Camera view of a classroom with three students labelled active, inactive and phone">
+      <rect width="360" height="240" fill="#0F1B45"/>
+      <g fill="#24356E">
+        <circle cx="75" cy="105" r="22"/><path d="M35 200c0-28 18-44 40-44s40 16 40 44z"/>
+        <circle cx="180" cy="110" r="22"/><path d="M140 200c0-28 18-44 40-44s40 16 40 44z"/>
+        <circle cx="285" cy="105" r="22"/><path d="M245 200c0-28 18-44 40-44s40 16 40 44z"/>
+      </g>
+      <g stroke="#8AA2FF" stroke-width="3" fill="none"><path d="M12 36V12h24M324 12h24v24M348 204v24h-24M36 228H12v-24"/></g>
+      <rect class="scan" x="12" y="20" width="336" height="3" fill="#8AA2FF" opacity=".5"/>
+      <g fill="none" stroke-width="3" font-family="IBM Plex Sans,sans-serif" font-size="13" font-weight="500">
+        <g class="box b2"><rect x="47" y="74" width="56" height="62" stroke="#34D399"/><text x="47" y="68" fill="#34D399" stroke="none">Active</text></g>
+        <g class="box b3"><rect x="152" y="79" width="56" height="62" stroke="#F5B84B"/><text x="152" y="73" fill="#F5B84B" stroke="none">Inactive</text></g>
+        <g class="box b4"><rect x="257" y="74" width="56" height="62" stroke="#FF7AA8"/><text x="257" y="68" fill="#FF7AA8" stroke="none">Phone</text></g>
+      </g>
+      <text x="22" y="222" font-family="IBM Plex Sans,sans-serif" font-size="13" fill="#B7C4E6">Attendance recorded: 3 of 3</text>
+    </svg>
+    <figcaption>My college project: a camera that marks attendance and sorts students by attention.</figcaption>
+  </figure>
+</div></div>
+
+<div class="facts"><div class="wrap">
+  <div class="fact"><b>8.2</b><span>CGPA at RVITM</span></div>
+  <div class="fact"><b>3</b><span>Projects built</span></div>
+  <div class="fact"><b>6 mo</b><span>Internship at Technook</span></div>
+  <div class="fact"><b>2027</b><span>Graduation year</span></div>
+</div></div>
+
+<main class="wrap">
+  <section id="about">
+    <h2>About me</h2>
+    <p class="about">I'm studying B.E. Computer Science and Engineering at RV Institute of Technology and Management. I started with a 6-month internship in my first year, and since then I've built projects that solve real problems. Now I'm learning web development so I can turn them into complete applications.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <article class="proj big p1">
+        <div class="top"></div>
+        <div class="body">
+          <span class="pill">College project</span>
+          <h3>Smart AI-Based Camera System</h3>
+          <p>A camera system that detects student faces and records attendance automatically.</p>
+          <ul><li>Marks attendance for each face it recognises.</li><li>Sorts students into active listeners, inactive students and phone users.</li></ul>
+        </div>
+      </article>
+      <article class="proj p2"><div class="top"></div><div class="body">
+        <span class="pill">Python</span><h3>Email Fraud Detector</h3>
+        <p>Scans emails for popular, trending scam keywords and flags the ones that are likely to be fraud.</p></div>
+      </article>
+      <article class="proj p3"><div class="top"></div><div class="body">
+        <span class="pill">Internship, Jupyter Notebook</span><h3>YouTube Algorithm Analysis</h3>
+        <p>Analyzes a user's viewing behavior to find trends in the kinds of videos they like to watch.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="exp">
+      <div><h3>Technook</h3><div class="meta">Intern<br>6 months, 2023-24</div></div>
+      <ul>
+        <li>Built the YouTube Algorithm Analysis project in Python using Jupyter Notebook.</li>
+        <li>Studied user viewing trends and the types of videos users prefer.</li>
+        <li>Earned the Technook internship certificate.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills and background</h2>
+    <div class="grid2">
+      <div class="card">
+        <h3>Programming</h3>
+        <ul class="chips"><li>Python</li><li>Java</li><li>C</li><li>C++ (basics)</li><li>Jupyter Notebook</li></ul>
+        <p class="learn">Currently learning HTML, CSS, JavaScript and a web framework.</p>
+      </div>
+      <div class="card">
+        <h3>Education and certificates</h3>
+        <ul class="plain">
+          <li>B.E. Computer Science and Engineering, RVITM, 2027</li>
+          <li>12th: 75%, 10th: 70%</li>
+          <li>Participant, College Cybersecurity Hackathon</li>
+          <li>Technook internship certificate</li>
+          <li>Speaks English, Hindi and Kannada, and understands Telugu</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Let's talk</h2>
+    <div class="box2">
+      <p>I'm looking for internships and entry-level roles in full stack and web development. Email me or call.</p>
+      <p><a class="big" href="mailto:rakshitraka90@gmail.com">rakshitraka90@gmail.com</a></p>
+      <p style="margin:0">Phone: <a class="tel" href="tel:+919964367555">+91 99643 67555</a> &nbsp;|&nbsp; Bengaluru, Karnataka</p>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap">&copy; 2026 Rakshit M. Appannavar</div></footer>
+</body>
+</html>
