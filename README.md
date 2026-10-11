@@ -2,7 +2,7 @@
 
 My personal portfolio website, built with plain HTML and CSS. It showcases my projects, internship experience, skills and contact details.
 
-**Live site:** https://YOUR-USERNAME.github.io
+**Live site:** https://rakshit-raka.github.io/
 
 ## About me
 
