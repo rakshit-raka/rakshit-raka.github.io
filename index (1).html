@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rakshit M. Appannavar | Aspiring Full Stack Developer</title>
+<meta name="description" content="Rakshit M. Appannavar, CSE student at RVITM, Bengaluru. Projects in Python and AI: attendance camera, email fraud detector, YouTube trend analysis. Open to internships.">
+<meta name="author" content="Rakshit M. Appannavar">
+<meta name="theme-color" content="#5B5BFF">
+<link rel="canonical" href="https://rakshit-raka.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rakshit M. Appannavar">
+<meta property="og:title" content="Rakshit M. Appannavar | Aspiring Full Stack Developer">
+<meta property="og:description" content="CSE student building smart Python and AI projects. See my work and get in touch. Open to internships.">
+<meta property="og:url" content="https://rakshit-raka.github.io/">
+<meta property="og:image" content="https://rakshit-raka.github.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Rakshit M. Appannavar, aspiring full stack developer">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rakshit M. Appannavar | Aspiring Full Stack Developer">
+<meta name="twitter:description" content="CSE student building smart Python and AI projects. Open to internships.">
+<meta name="twitter:image" content="https://rakshit-raka.github.io/og-image.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%BB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#EEEAFF;--panel:#FFFFFF;--ink:#1A1033;--muted:#4D4468;--bd:#1A1033;--sh:#1A1033;
+  --blue:#5B5BFF;--pink:#FF6FAE;--lime:#C8FF3D;--on:#1A1033;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#130F2A;--panel:#1E1840;--ink:#F4F1FF;--muted:#B5ADD6;--bd:#F4F1FF;--sh:#000}}
+:root[data-theme="dark"]{--bg:#130F2A;--panel:#1E1840;--ink:#F4F1FF;--muted:#B5ADD6;--bd:#F4F1FF;--sh:#000}
+html{scroll-padding-top:76px;scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "DM Sans",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",sans-serif;line-height:1.05;margin:0;letter-spacing:-.02em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.card{background:var(--panel);border:2px solid var(--bd);border-radius:20px;box-shadow:6px 6px 0 var(--sh);padding:24px}
+.tag{display:inline-block;border:2px solid var(--bd);border-radius:999px;padding:3px 14px;font-weight:700;font-size:14px;background:var(--panel);color:var(--ink)}
+.tag.l{background:var(--lime);color:var(--on)}.tag.p{background:var(--pink);color:var(--on)}.tag.b{background:var(--blue);color:#fff}
+
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--bg);border-bottom:2px solid var(--bd)}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-top:12px;padding-bottom:12px}
+.logo{font:800 22px "Bricolage Grotesque",sans-serif;text-decoration:none}
+.logo span{color:var(--blue)}
+.nav nav{display:flex;gap:6px;flex-wrap:wrap}
+.nav nav a{text-decoration:none;font-weight:500;padding:5px 14px;border-radius:999px;border:2px solid transparent}
+.nav nav a:hover{border-color:var(--bd);background:var(--lime);color:var(--on)}
+
+.hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:center;padding-top:60px;padding-bottom:60px}
+.stickers{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+.hero h1{font-size:clamp(42px,7vw,80px);font-weight:800}
+.hero h1 mark{background:var(--lime);color:var(--on);padding:0 .15em;border-radius:12px}
+.lead{font-size:19px;color:var(--muted);max-width:30em;margin:22px 0 28px}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;font-weight:700;text-decoration:none;padding:13px 24px;border:2px solid var(--bd);border-radius:14px;box-shadow:4px 4px 0 var(--sh);transition:transform .12s,box-shadow .12s}
+.btn:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--sh)}
+.btn.m{background:var(--blue);color:#fff}.btn.a{background:var(--panel)}
+.vf{padding:12px;background:#0F0A2B;transform:rotate(1.5deg);position:relative}
+.vf svg{width:100%;height:auto;display:block;border-radius:10px}
+.vf .rec{position:absolute;top:22px;right:24px;color:#fff;font-weight:700;font-size:13px;display:flex;gap:6px;align-items:center}
+.vf .rec i{width:10px;height:10px;border-radius:50%;background:#FF4D6D}
+.vf figcaption{color:#C9C2EE;font-size:14px;padding:8px 4px 0}
+.box{opacity:0;animation:pop .4s ease forwards}.b2{animation-delay:.4s}.b3{animation-delay:.8s}.b4{animation-delay:1.2s}
+@keyframes pop{to{opacity:1}}
+
+.marq{background:var(--lime);color:var(--on);border-block:2px solid var(--bd);overflow:hidden;white-space:nowrap}
+.marq div{display:inline-block;padding:12px 0;font:800 20px "Bricolage Grotesque",sans-serif;animation:slide 26s linear infinite}
+.marq span{margin:0 22px}
+@keyframes slide{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.marq div{animation:none}.box{animation:none;opacity:1}html{scroll-behavior:auto}.btn{transition:none}}
+
+section{padding:68px 0 0}
+h2{font-size:clamp(32px,5vw,52px);font-weight:800;margin-bottom:26px}
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:26px;align-items:start}
+.about p{font-size:18px;margin:0}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.stat{border:2px solid var(--bd);border-radius:16px;padding:14px 16px;box-shadow:4px 4px 0 var(--sh);color:var(--on)}
+.stat b{display:block;font:800 30px "Bricolage Grotesque",sans-serif}
+.stat span{font-size:14px;font-weight:500}
+.s1{background:var(--pink)}.s2{background:var(--lime)}.s3{background:#A9B8FF}.s4{background:#FFD36B}
+
+.projects{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.proj{color:var(--on);display:flex;flex-direction:column;gap:12px}
+.proj h3{font-size:26px}.proj p,.proj ul{margin:0}.proj ul{padding-left:20px}
+.proj.big{grid-column:1/-1;background:#A9B8FF}
+.proj.e{background:var(--pink)}.proj.y{background:var(--lime)}
+.proj .tag{align-self:flex-start;background:#fff;color:#1A1033;border-color:#1A1033}
+.exp{display:grid;grid-template-columns:230px 1fr;gap:26px}
+.exp ul{margin:0;padding-left:20px}.exp .meta{color:var(--muted);margin-top:8px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.grid2 h3{font-size:24px;margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:0}
+.chips li{border:2px solid var(--bd);border-radius:12px;padding:6px 16px;font-weight:700;background:var(--bg)}
+.grid2 ul.pl{margin:0;padding-left:20px}.learn{color:var(--muted);margin:16px 0 0}
+
+.contact .card{background:var(--blue);color:#fff;padding:44px 32px;border-radius:26px}
+.contact h2{margin-bottom:12px}
+.contact p{margin:0 0 20px;max-width:34em}
+.contact .btn{background:var(--lime);color:var(--on)}
+.contact .tel{font-weight:700}
+footer{padding:44px 0 56px;color:var(--muted);font-size:14px}
+
+@media (max-width:820px){
+  .hero .wrap,.about,.projects,.exp,.grid2{grid-template-columns:1fr}
+  .hero .wrap{padding-top:36px}.vf{transform:none}
+  .nav nav a{padding:5px 9px}
+}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="logo" href="#top">Rakshit<span>.</span></a>
+  <nav aria-label="Sections"><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+  <div>
+    <div class="stickers"><span class="tag l">Open to internships</span><span class="tag p">CSE '27</span><span class="tag b">Bengaluru</span></div>
+    <h1>Hi, I'm Rakshit. I build <mark>smart</mark> software.</h1>
+    <p class="lead">Third-year Computer Science student at RVITM, working towards a full stack developer role. My projects use Python and AI to detect faces, catch scams and read viewing trends.</p>
+    <div class="btns"><a class="btn m" href="#projects">See my work</a><a class="btn a" href="#contact">Say hi</a></div>
+  </div>
+  <figure class="card vf" style="margin:0">
+    <div class="rec"><i></i>LIVE</div>
+    <svg viewBox="0 0 360 240" role="img" aria-label="Camera view of a classroom with three students labelled active, inactive and phone">
+      <rect width="360" height="240" fill="#1B1450"/>
+      <g fill="#352A8A"><circle cx="75" cy="105" r="22"/><path d="M35 200c0-28 18-44 40-44s40 16 40 44z"/><circle cx="180" cy="110" r="22"/><path d="M140 200c0-28 18-44 40-44s40 16 40 44z"/><circle cx="285" cy="105" r="22"/><path d="M245 200c0-28 18-44 40-44s40 16 40 44z"/></g>
+      <g stroke="#C8FF3D" stroke-width="3" fill="none"><path d="M12 36V12h24M324 12h24v24M348 204v24h-24M36 228H12v-24"/></g>
+      <g fill="none" stroke-width="3" font-family="DM Sans,sans-serif" font-size="13" font-weight="700">
+        <g class="box b2"><rect x="47" y="74" width="56" height="62" stroke="#C8FF3D"/><text x="47" y="68" fill="#C8FF3D" stroke="none">Active</text></g>
+        <g class="box b3"><rect x="152" y="79" width="56" height="62" stroke="#FFD36B"/><text x="152" y="73" fill="#FFD36B" stroke="none">Inactive</text></g>
+        <g class="box b4"><rect x="257" y="74" width="56" height="62" stroke="#FF6FAE"/><text x="257" y="68" fill="#FF6FAE" stroke="none">Phone</text></g>
+      </g>
+      <text x="22" y="222" font-family="DM Sans,sans-serif" font-size="13" fill="#D6D0F5">Attendance recorded: 3 of 3</text>
+    </svg>
+    <figcaption>My college project: a camera that takes attendance and sorts students by attention.</figcaption>
+  </figure>
+</div></div>
+
+<div class="marq" aria-hidden="true"><div>
+  <span>Python</span><span>*</span><span>Java</span><span>*</span><span>C</span><span>*</span><span>C++</span><span>*</span><span>AI</span><span>*</span><span>Cybersecurity</span><span>*</span><span>Web Dev</span><span>*</span><span>Python</span><span>*</span><span>Java</span><span>*</span><span>C</span><span>*</span><span>C++</span><span>*</span><span>AI</span><span>*</span><span>Cybersecurity</span><span>*</span><span>Web Dev</span><span>*</span>
+</div></div>
+
+<div class="wrap">
+  <section id="about">
+    <h2>About me</h2>
+    <div class="about">
+      <p>I'm studying B.E. Computer Science and Engineering at RV Institute of Technology and Management. I did a 6-month internship in my first year, and since then I've built projects that solve real problems. Now I'm learning web development so I can turn them into complete apps.</p>
+      <div class="stats">
+        <div class="stat s1"><b>8.2</b><span>CGPA</span></div>
+        <div class="stat s2"><b>3</b><span>Projects</span></div>
+        <div class="stat s3"><b>6 mo</b><span>Internship</span></div>
+        <div class="stat s4"><b>2027</b><span>Graduating</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <article class="card proj big">
+        <span class="tag">College project</span>
+        <h3>Smart AI-Based Camera System</h3>
+        <p>A camera system that detects student faces and records attendance automatically.</p>
+        <ul><li>Marks attendance for every face it recognises.</li><li>Sorts students into active listeners, inactive students and phone users.</li></ul>
+      </article>
+      <article class="card proj e"><span class="tag">Python</span><h3>Email Fraud Detector</h3><p>Scans emails for popular, trending scam keywords and flags the ones that are likely to be fraud.</p></article>
+      <article class="card proj y"><span class="tag">Internship, Jupyter Notebook</span><h3>YouTube Algorithm Analysis</h3><p>Analyzes a user's viewing behavior to find trends in the kinds of videos they like to watch.</p></article>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="card exp">
+      <div><h3 style="font-size:26px">Technook</h3><div class="meta">Intern<br>6 months, 2023-24</div></div>
+      <ul>
+        <li>Built the YouTube Algorithm Analysis project in Python using Jupyter Notebook.</li>
+        <li>Studied user viewing trends and the types of videos users prefer.</li>
+        <li>Earned the Technook internship certificate.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills and background</h2>
+    <div class="grid2">
+      <div class="card"><h3>Tech stack</h3>
+        <ul class="chips"><li>Python</li><li>Java</li><li>C</li><li>C++ (basics)</li><li>Jupyter Notebook</li></ul>
+        <p class="learn">Currently learning HTML, CSS, JavaScript and a web framework.</p></div>
+      <div class="card"><h3>Education and certificates</h3>
+        <ul class="pl"><li>B.E. Computer Science and Engineering, RVITM, 2027</li><li>12th: 75%, 10th: 70%</li><li>Participant, College Cybersecurity Hackathon</li><li>Technook internship certificate</li><li>Speaks English, Hindi and Kannada, and understands Telugu</li></ul></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="card">
+      <h2>Let's build something.</h2>
+      <p>I'm looking for internships and entry-level roles in full stack and web development. Drop me a message.</p>
+      <p><a class="btn" href="mailto:rakshitraka90@gmail.com">rakshitraka90@gmail.com</a></p>
+      <p style="margin:0">Phone: <a class="tel" href="tel:+919964367555">+91 99643 67555</a> | Bengaluru, Karnataka</p>
+    </div>
+  </section>
+</div>
+</main>
+<footer><div class="wrap">&copy; 2026 Rakshit M. Appannavar</div></footer>
+</body>
+</html>
